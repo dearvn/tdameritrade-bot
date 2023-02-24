@@ -3,6 +3,8 @@ TD Ameritrade Bot is an artificial intelligence-powered chatbot that provides cl
 
 A simple bot to tracking ticker to trade option on TDA
 
+![Alt text](https://github.com/dearvn/tdameritrade-bot/raw/main/recommend.png?raw=true "UI")
+
 ```
 # Create an isolated Python virtual environment
 pip install virtualenv
