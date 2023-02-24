@@ -1,0 +1,16 @@
+celery==4.4.6
+Django==2.2.8
+django-extensions
+djangorestframework==3.8.2
+hiredis==0.2.0
+pytz==2018.3
+redis==2.10.6
+pandas>=0.22.0
+requests==2.24.0
+integer>=1.0.3
+numpy==1.18.0
+virtualenv==20.0.26
+tda-api==1.6.0
+pandas_ta==0.3.14b
+websocket-client~=0.57.0
+pusher
