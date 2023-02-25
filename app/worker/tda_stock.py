@@ -2,22 +2,12 @@
 Implementation of various trading strategies.
 
 """
-import json, math, os, json, logging, pytz, redis, statistics, numpy, time
-import requests, random
+import os, json, logging, pytz, redis
 import pandas as pd
-from pandas import DataFrame, Series
-import numpy as np
-from datetime import date, datetime, timedelta
-import dateutil.parser
-from typing import Sequence
-from numbers import Number
-import pandas_ta as ta
-#from tda import auth, client
-#from sklearn.cluster import KMeans
-from .yfoption import Option
-from tdameritrade.client import TDClient
-from tiingo.api import TiingoClient
+from datetime import datetime
+from app.tdameritrade.client import TDClient
 import pusher
+import pandas_ta as ta
 
 log = logging.getLogger(__name__)
 redis_client = redis.Redis(host=os.environ.get("REDIS_HOST", "redis"),

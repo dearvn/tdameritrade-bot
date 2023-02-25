@@ -2,7 +2,7 @@ import logging, os, json
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
-from .worker.tasks import recommend_options_exe
+from app.worker.tasks import recommend_options_exe
 
 logger = logging.getLogger(__name__)
 
