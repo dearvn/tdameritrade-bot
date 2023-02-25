@@ -5,6 +5,8 @@ A simple bot to tracking ticker to trade option on TDA
 
 ![Alt text](https://github.com/dearvn/tdameritrade-bot/raw/main/recommend.png?raw=true "UI")
 
+## Run on local to develop
+
 ```
 # Create an isolated Python virtual environment
 pip install virtualenv
@@ -20,10 +22,6 @@ pip install -r requirements.txt
 pip install -e .
 pip install -e ./app
 
-# Run docker
-
-docker-compose build
-docker-compose up -d
 
 ```
 
@@ -37,9 +35,33 @@ python -m app.token
 ```
 # Get refresh-token
 
+# Set variable param on local
+
+```
+export TDAMERITRADE_CLIENT_ID=
+export TDAMERITRADE_REFRESH_TOKEN=
+export PUSHER_APP_ID=
+export PUSHER_KEY=
+export PUSHER_SECRET=
+```
 
 # Local test
 
 ```
 python -m app.test-tda
 ```
+
+## Run by docker
+
+# Run docker
+
+```
+docker-compose build
+docker-compose up -d
+```
+
+## Rest Api
+
+http://0.0.0.0:8000/recommend-options-get
+params: tickers = ['AAPL','TSLA']
+
