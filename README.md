@@ -53,15 +53,24 @@ python -m app.test-tda
 
 ## Run by docker
 
+* Edit params in env.evn
+
 # Run docker
 
 ```
 docker-compose build
 docker-compose up -d
+
+docker exec -i -t tdameritrade-bot_app_1  /bin/bash
+
+python manage.py runserver 0.0.0.0:8000
+
+
 ```
 
 ## Rest Api
 
 http://0.0.0.0:8000/recommend-options-get
-params: tickers = ['AAPL','TSLA']
+Method: GET
+Params: tickers = ['AAPL','TSLA']
 
